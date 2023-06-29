@@ -1,1 +1,56 @@
-/*# sourceMappingURL=index.css.map */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  header {
+    padding-top: 33px;
+    padding-left: 69px;
+    padding-right: 40px;
+    margin-bottom: 33px;
+  }
+}
+
+.logo {
+  display: block;
+  max-width: 107px;
+}
+.logo img {
+  width: 100%;
+}
+
+.globalNavigation {
+  background-color: #DD1B57;
+  display: inline-block;
+  padding: 22px 17px;
+}
+@media screen and (min-width: 768px) {
+  .globalNavigation {
+    display: none;
+  }
+}
+.globalNavigation span {
+  display: block;
+  width: 28px;
+  height: 2px;
+  margin-bottom: 8px;
+  background-color: white;
+}
+.globalNavigation span:last-child {
+  margin-bottom: 0px;
+}
+
+.menu a {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+.menu a:hover {
+  color: #DD1B57;
+}
+.menu .active {
+  color: #DD1B57;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,67 @@
+$breakpoint: (
+  pc: 'screen and (min-width: 768px)'
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+   @content;
+  }
+}
+
+$pink:#DD1B57;
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    @include mq(pc){
+        padding-top: 33px;
+        padding-left: 69px;
+        padding-right: 40px;
+        margin-bottom: 33px;
+    }
+}
+
+.logo{
+    display: block;
+    max-width: 107px;
+    img{
+        width: 100%;
+    }
+}
+
+.globalNavigation{
+    background-color: $pink;
+    display: inline-block;
+    padding: 22px 17px;
+    @include mq(pc){
+        display: none;
+    }
+     span{
+        display: block;
+        width: 28px;
+        height: 2px;
+        margin-bottom: 8px;
+        background-color: white;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+     }
+}
+
+
+.menu{
+    a{
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 20px;
+        &:hover{
+            color: $pink;
+        }
+    }
+    .active{
+        color: $pink;
+    }
+}
