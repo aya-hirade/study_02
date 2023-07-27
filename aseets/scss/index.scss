@@ -52,6 +52,7 @@ header{
 
 
 .menu{
+    display: none;
     a{
         display: inline-block;
         font-size: 16px;
@@ -63,5 +64,42 @@ header{
     }
     .active{
         color: $pink;
+    }
+    @include mq(pc){
+        display: block;
+    }
+}
+
+
+.hero{
+    position: relative;
+    background-image: url(../images/mv.png);
+    max-width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy{
+    color: #fff;
+    text-align: center;
+    h1{
+        font-size: 80px;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+    }
+    .subCopy{
+        font-size: 20px;
+        letter-spacing: 0.1em;
+    }
+
+    @include mq(pc){
+        h1{
+            font-size: 160px;
+        }
+        .subCopy{
+            font-size: 24px;
+        }
     }
 }
