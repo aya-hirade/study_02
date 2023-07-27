@@ -42,6 +42,9 @@ header {
   margin-bottom: 0px;
 }
 
+.menu {
+  display: none;
+}
 .menu a {
   display: inline-block;
   font-size: 16px;
@@ -53,4 +56,41 @@ header {
 }
 .menu .active {
   color: #DD1B57;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: block;
+  }
+}
+
+.hero {
+  position: relative;
+  background-image: url(../images/mv.png);
+  max-width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy {
+  color: #fff;
+  text-align: center;
+}
+.copy h1 {
+  font-size: 80px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.copy .subCopy {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+@media screen and (min-width: 768px) {
+  .copy h1 {
+    font-size: 160px;
+  }
+  .copy .subCopy {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=index.css.map */
